@@ -19,7 +19,7 @@ export default function Header() {
         </form>
         <Button className='w-11 h-10 lg:hidden' color="teal" pill>
             <AiOutlineSearch/>
-        </Button>
+        </Button> 
         <div className='flex gap-2 md:order-2'>
             <Button className='w-11 h-10 hidden sm:inline' color="teal" pill>
                 <FaMoon/>
