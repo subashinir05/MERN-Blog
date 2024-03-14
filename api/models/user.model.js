@@ -15,6 +15,10 @@ const userSchema = new mongoose.Schema({
         type: String, 
         required: true,
     },
+    profilePicture: {
+        type: String,
+        default:"https://woodfibreinsulation.co.uk/wp-content/uploads/2017/04/blank-profile-picture-973460-1-1-300x300.png",
+    }
 }, {timestamps: true}
 );
 
