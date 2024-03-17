@@ -28,7 +28,7 @@ export default function CreatePost() {
             </div>
             <ReactQuill theme='snow' placeholder='Add description' className='h-72 mb-12'
             required />
-            <Button type='submit'className='bg-gradient-to-r from-teal-300 to-orange-200 text-gray-700' outline>Add Post</Button>
+            <Button type='submit'className='bg-gradient-to-r from-teal-300 to-orange-200 text-gray-700'>Add Post</Button>
         </form>
 
     </div>
