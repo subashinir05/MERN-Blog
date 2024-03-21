@@ -4,7 +4,7 @@ import {FaHeart} from 'react-icons/fa';
 import {useSelector} from 'react-redux';
 import {Textarea, Button} from 'flowbite-react'
 
-export default function Comment({ comment, onLike, onEdit}) {
+export default function Comment({ comment, onLike, onEdit, onDelete}) {
   const [user, setUser] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(comment.content);
@@ -30,13 +30,13 @@ export default function Comment({ comment, onLike, onEdit}) {
   }
   const handleSave = async () => {
     try {
-      const res  = await fetch(`/api/comment/editComment/${comment._id}`, {
+      const res = await fetch(`/api/comment/editComment/${comment._id}`, {
         method: 'PUT',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          content: editedContent
+          content: editedContent,
         })
       });
       if (res.ok) {
@@ -46,7 +46,6 @@ export default function Comment({ comment, onLike, onEdit}) {
     } catch (error) {
       console.log(error.message);
     }
-
   }
 
   return (
@@ -107,12 +106,20 @@ export default function Comment({ comment, onLike, onEdit}) {
           </p>
           {currentUser &&
                 (currentUser._id === comment.userId || currentUser.isAdmin) && (
+                  <>
                   <button
                     type='button'
                     onClick={handleEdit}
                     className='text-gray-400 hover:text-blue-500'>
                     Edit
                   </button>
+                  <button
+                    type='button'
+                    onClick={() => onDelete(comment._id)}
+                    className='text-gray-400 hover:text-red-500'>
+                    Delete
+                  </button>
+                </>
                 )}
             </div>
             </>
