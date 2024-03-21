@@ -14,7 +14,7 @@ export default function  () {
                 <a href='https://legacy.reactjs.org/tutorial/tutorial.html' target='_blank' rel='noopener noreferrer'>Learn More</a>
                 </Button>
         </div>
-        <div className='p-7' flex-1>
+        <div className='p-7  flex-1'>
             <img src='https://w0.peakpx.com/wallpaper/564/515/HD-wallpaper-business-plan-ultra-computers-others-internet-business-laptop-desk-table-coffee-hands-work-project-plan-office-macbook-planning-information-topview-workplace-analysis-startup-woodentable.jpg'></img>
         </div>
     </div>
