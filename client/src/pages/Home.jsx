@@ -20,8 +20,8 @@ export default function Home() {
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
         <h1 className='text-3xl font-bold lg:text-6xl'>
               Welcome to my Blog <span className='text-blue-400 italic'>"The Tasty Tales!!" </span></h1>
-          <p className='text-gray-500 text-xs sm:text-sm'>
-            Feasting my way through life, one bite at a time.
+          <p className='text-gray-500 text-base sm:text-base'>
+          "Unleash your inner chef and taste the magic! 🌟🍽️ Let's turn delicious dreams into reality, one recipe at a time. Savor the flavor, feed the soul. 💖🥗"
           </p>
           <Link to='/search' className='text-xs sm:text-sm text-gray-400 font-semibold hover:underline hover:text-teal-300'>
             Browse every post
