@@ -122,12 +122,14 @@ export default function Search() {
                 <div className='flex items-center gap-2'>
                     <label className='font-medium'>Category:</label>
                     <Select onChange={handleChange} value={sidebarData.category} id='category'>
-                    <option value='uncategorized'>Uncategorized</option>
-                    <option value='health'>Health</option>
-                    <option value='sports'>Sports</option>
-                    <option value='education'>Education</option>
-                    <option value='politics'>Politics</option>
-                    <option value='others'>Others</option>
+                    <option value="Uncategorized">Select Category</option>
+                    <option value="Baked">Baked</option>
+                    <option value="Roasted">Roasted</option>
+                    <option value="Steamed">Steamed</option>
+                    <option value="Fried">Fried</option>
+                    <option value="Sauteed">Sauteed</option>
+                    <option value="Blended">Blended</option>
+                    <option value="Others">Others</option>
                     </Select>
                 </div>
                 <Button type='submit' className='bg-gradient-to-r from-purple-300 to-teal-300'>Apply Filters</Button>

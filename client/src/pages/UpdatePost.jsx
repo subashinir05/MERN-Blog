@@ -115,12 +115,14 @@ export default function UpdatePost() {
                     setFormData({...formData, category: e.target.value})
                     }
                     value={formData.category}>
-                    <option value="Uncategorized">Select Category</option>
-                    <option value="it">IT</option>
-                    <option value="education">Education</option>
-                    <option value="sports">Sports</option>
-                    <option value="politics">Politics</option>
-                    <option value="others">Others</option>
+                     <option value="Uncategorized">Select Category</option>
+                    <option value="Baked">Baked</option>
+                    <option value="Roasted">Roasted</option>
+                    <option value="Steamed">Steamed</option>
+                    <option value="Fried">Fried</option>
+                    <option value="Sauteed">Sauteed</option>
+                    <option value="Blended">Blended</option>
+                    <option value="Others">Others</option>
                 </Select>
             </div>
             <div className='flex gap-4 items-center justify-between border-2 border-blue-300 border-double p-3 '>

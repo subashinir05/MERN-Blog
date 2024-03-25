@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Spinner, Button } from 'flowbite-react'
-import CallToAction from '../components/CallToAction'
+import CallToActions from '../components/CallToActions'
 import CommentSection from '../components/CommentSection'
 import PostCard from '../components/PostCard'
 
@@ -80,7 +80,7 @@ export default function PostPage() {
         dangerouslySetInnerHTML={{ __html: post && post.content }}>
         </div>
         <div className='max-w-4xl mx-auto w-full '>
-          <CallToAction/>
+          <CallToActions/>
         </div>
         <CommentSection  postId = {post._id}  />
         <div className='flex flex-col justify-center items-center mb-5'>

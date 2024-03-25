@@ -50,9 +50,9 @@ export default function Header() {
       
   return (
     <Navbar className='border-b-2'>
-        <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-            <span className='px-2 py-1 bg-gradient-to-r from-purple-400 to-teal-300 rounded-xl'>Suba's</span>
-            Blog
+        <Link to="/" className='self-center whitespace-nowrap text-xs sm:text-base font-base dark:text-white italic'>
+            <span className='px-2 py-1 bg-gradient-to-r from-teal-200 to-purple-300 rounded-xl text-lg font-medium'>CraveCraze</span>
+             Bite into Deliciousness
         </Link>
         <form onSubmit={handleSubmit}>
             <TextInput type='text' placeholder='Search..' rightIcon={AiOutlineSearch}
@@ -96,7 +96,7 @@ export default function Header() {
             ):
             (
                 <Link to='/sign-in'>
-                <Button gradientDuoTone='purpleToBlue' outline>
+                <Button className='bg-gradient-to-r from-blue-300 to-purple-300' outline>
                     Sign In
                 </Button>
              </Link>

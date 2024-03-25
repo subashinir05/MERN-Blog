@@ -17,6 +17,9 @@ export default function About() {
             Thank you for joining us on this delectable journey. Here's to many more mouthwatering moments together! 💖🥰
             </p>
           </div>
+          <div>
+            
+          </div>
         </div>
       </div>
     </div>

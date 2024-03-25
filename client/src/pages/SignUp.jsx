@@ -45,8 +45,8 @@ export default function SignUp() {
     <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-6'> 
         {/* /left */}
         <div className='flex-1'>
-        <Link to="/" className=' font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 bg-gradient-to-r from-blue-100 to-teal-300 rounded-xl'>Suba's</span>
+        <Link to="/" className=' font-semibold dark:text-white text-3xl'>
+            <span className='px-2 py-1 italic rounded'>Suba's</span>
             Blog
         </Link>
         <p className='text-sm mt-5'>
@@ -77,7 +77,7 @@ export default function SignUp() {
                   placeholder='Password'
                   id='password' onChange={handleChange}/>
             </div>
-            <Button className='bg-gradient-to-r from-blue-300 to-teal-300' type='submit' outline disabled={loading}>
+            <Button className='bg-gradient-to-r from-purple-300 to-teal-300' type='submit' outline disabled={loading}>
               {loading ? (
                   <>
                   <Spinner size='sm'/>
